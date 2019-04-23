@@ -1,0 +1,18 @@
+.ControlBar {
+    display: grid;
+    grid-template-columns: 0.6fr repeat(3, auto) 0.5fr;
+    align-items: center;
+    justify-items: left;
+    /* grid-gap: 20px; */
+
+}
+
+.Title {
+    font-size: 2rem;
+    color: crimson;
+    /* margin-left: 2rem; */
+    /* margin-right: 2rem; */
+    font-style: italic;
+    font-weight: bold;
+    /* justify-self: left; */
+}

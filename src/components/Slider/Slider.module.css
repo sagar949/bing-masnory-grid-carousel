@@ -1,0 +1,35 @@
+.Container {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    /* display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-row-gap: 0; */
+}
+
+.Title {
+    margin: 0
+}
+
+.Slider {
+    width: 350px;
+    /* margin: 0 1rem; */
+    height: 2px;
+    color: crimson
+}
+
+.Steps {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* .Steps span {
+
+    margin: 0 0.5rem;
+} */

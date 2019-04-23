@@ -1,0 +1,26 @@
+.Category {
+    /* padding: 0.5rem 0.8rem;
+    margin: 1rem; */
+    border-right: 1px solid rgb(177, 173, 173);
+    line-height: 5px;
+    /* height: 8rem; */
+    /* display: inline-block; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-right: 1.5rem;
+}
+
+select {
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-weight: bold;
+}
+
+select:focus {
+    outline: none;
+}
+
+option {
+    font: bolder;
+}

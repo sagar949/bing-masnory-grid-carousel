@@ -1,0 +1,21 @@
+.GiftFor {
+    /* display: inline-block;
+    margin: 0 1rem;
+    text-align: center; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    cursor: pointer;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 0.9;
+
+}
+
+.GiftFor p {
+    margin-top: 0.4rem;
+}
+
+.Active {
+    color: crimson
+}

@@ -1,0 +1,95 @@
+.Card {
+    transition: all 0.2s ease;
+    width: 150px;
+    height: 150px;
+    /* z-index: 20; */
+    background: #fff;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.CardImage {
+    width: 75%;
+    height: 40%;
+    margin: auto;
+}
+
+.CardImage img {
+    width: 60%;
+}
+
+.BasicDetails {
+    line-height: 0.4;
+    text-align: left;
+
+}
+
+.BasicDetails p {
+    margin-left: 0.5em;
+    font-size: 0.8rem;
+    /* width: 80%; */
+    /* margin: auto; */
+}
+
+.BasicDetails p:first-child {
+    color: grey;
+    /* width: 80%; */
+    /* margin: auto; */
+}
+
+.HoveredCard {
+    transition: all 0.2s ease;
+    width: 220px;
+    height: 340px;
+    /* z-index: 20; */
+    background: #fff;
+    cursor: pointer;
+    /* display: grid;
+    grid-template-rows: 2fr auto; */
+
+}
+
+.HoveredCardImage {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    padding-bottom: 0.5rem;
+
+}
+
+.HoveredCardImage img {
+    width: 100%;
+
+
+}
+
+.HoveredBasicDetails {
+    line-height: 0.6;
+    text-align: left;
+    color: black;
+    margin-left: 1em;
+}
+
+.Discount {
+    text-decoration: line-through;
+}
+
+.Price {
+    font-weight: bold;
+}
+
+.Owner {
+    color: green;
+    font-weight: bold;
+}
+
+.SeeMore {
+    background: #333;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 55px;
+    justify-items: center;
+    align-items: center
+}
