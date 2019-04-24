@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './ProductCard.module.css';
 import 'react-tippy/dist/tippy.css';
-import { Tooltip } from 'react-tippy';
+// import { Tooltip } from 'react-tippy';
+import Tooltip from '../../Common/Tooltip/Tooltip';
 
 const getRandomPrice = price => {
   return Math.ceil(Math.random() * price) + price + 100;
@@ -28,20 +29,21 @@ const ProductCard = props => {
     </div>
   );
   return (
-    <Tooltip
-      // options
-      //   position="bottom"
-      arrow={false}
-      animateFill={false}
-      distance={1}
-      trigger="mouseenter"
-      //   followCursor={true}
-      html={html}
-      position="top"
-      //   theme="transparent"
-      interactive={true}
-      interactiveBorder={1}
-    >
+    // <Tooltip
+    //   // options
+    //   //   position="bottom"
+    //   arrow={false}
+    //   animateFill={false}
+    //   distance={1}
+    //   trigger="mouseenter"
+    //   //   followCursor={true}
+    //   html={html}
+    //   position="top"
+    //   //   theme="transparent"
+    //   interactive={true}
+    //   interactiveBorder={1}
+    // >
+    <Tooltip render={html}>
       <div
         className={styles.Card}
         onClick={() => window.open('https://www.amazon.com', '_blank')}
