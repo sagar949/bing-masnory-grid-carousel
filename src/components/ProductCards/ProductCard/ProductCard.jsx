@@ -7,6 +7,37 @@ import Tooltip from '../../Common/Tooltip/Tooltip';
 const getRandomPrice = price => {
   return Math.ceil(Math.random() * price) + price + 100;
 };
+
+const types = ['normal', 'wide', 'tall'];
+const getRandomstyling = () => {
+  const styleType = types[Math.floor(Math.random() * 3)];
+  let style = '';
+  let cardStyle = '';
+  let detailsStyle = styles.NormalItemDetails;
+  if (styleType === 'tall') {
+    style = [styles.Tall].join(' ');
+    cardStyle = styles.TallItem;
+    detailsStyle = styles.TallItemDetails;
+  } else if (styleType === 'wide') {
+    style = [styles.Wide].join(' ');
+    cardStyle = styles.WideItem;
+
+    detailsStyle = styles.WideItemDetails;
+  } else if (styleType === 'normal') {
+    style = ' '; //[styles.NormalItem].join(' ');
+    cardStyle = styles.NormalItem;
+
+    detailsStyle = styles.NormalItemDetails;
+  } else {
+    style = ' '; //[styles.NormalItem].join(' ');
+    cardStyle = styles.TallItem;
+
+    detailsStyle = styles.NormalItemDetails;
+  }
+  console.log({ style, detailsStyle });
+  return { style, cardStyle, detailsStyle };
+};
+
 const ProductCard = props => {
   const { name, price, imgUrl } = props;
   const html = (
@@ -28,48 +59,23 @@ const ProductCard = props => {
       </div>
     </div>
   );
+  const { style, cardStyle, detailsStyle } = getRandomstyling();
   return (
-    // <Tooltip
-    //   // options
-    //   //   position="bottom"
-    //   arrow={false}
-    //   animateFill={false}
-    //   distance={1}
-    //   trigger="mouseenter"
-    //   //   followCursor={true}
-    //   html={html}
-    //   position="top"
-    //   //   theme="transparent"
-    //   interactive={true}
-    //   interactiveBorder={1}
-    // >
-    <Tooltip render={html}>
+    <Tooltip render={html} style={style}>
       <div
-        className={styles.Card}
+        className={cardStyle}
         onClick={() => window.open('https://www.amazon.com', '_blank')}
+        style={{ background: '#333', color: '#fff' }}
       >
-        <div className={styles.CardImage}>
+        <div>
           <img src={imgUrl} alt="Product" />
         </div>
-        <div className={styles.BasicDetails}>
+        <div className={detailsStyle}>
           <p>{name}</p>
           <p>${price}</p>
         </div>
       </div>
     </Tooltip>
-
-    // <ReactHover options={optionsCursorTrueWithMargin}>
-    //   <ReactHover.Trigger type="trigger">
-    //     <div className={styles.Card}>
-    //       <img src="https://place-hold.it/100x150" alt="" />
-    //     </div>
-    //   </ReactHover.Trigger>
-    //   <ReactHover.Hover type="hover">
-    //     <div className={styles.Card}>
-    //       <img src="https://place-hold.it/200x200" alt="" />
-    //     </div>
-    //   </ReactHover.Hover>
-    // </ReactHover>
   );
 };
 

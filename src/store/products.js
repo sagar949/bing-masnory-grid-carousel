@@ -477,7 +477,7 @@ const products = [
     price: 1299,
     for: 'Kids',
     imgUrl:
-      'https://purepng.com/public/uploads/large/female-tennis-player-kmi.png'
+      'https://purepng.com/public/uploads/large/hands-holding-table-tennis-of-racket-and-ball-ovk.png'
   },
   {
     id: 54,
@@ -487,7 +487,7 @@ const products = [
     price: 1299,
     for: 'Kids',
     imgUrl:
-      'https://purepng.com/public/uploads/large/female-tennis-player-kmi.png'
+      'https://purepng.com/public/uploads/large/hands-holding-table-tennis-of-racket-and-ball-ovk.png'
   },
   {
     id: 55,
@@ -497,7 +497,7 @@ const products = [
     price: 1299,
     for: 'Kids',
     imgUrl:
-      'https://purepng.com/public/uploads/large/female-tennis-player-kmi.png'
+      'https://purepng.com/public/uploads/large/hands-holding-table-tennis-of-racket-and-ball-ovk.png'
   },
   {
     id: 56,
@@ -507,7 +507,7 @@ const products = [
     price: 1299,
     for: 'Kids',
     imgUrl:
-      'https://purepng.com/public/uploads/large/female-tennis-player-kmi.png'
+      'https://purepng.com/public/uploads/large/hands-holding-table-tennis-of-racket-and-ball-ovk.png'
   },
   {
     id: 57,
@@ -517,7 +517,7 @@ const products = [
     price: 1299,
     for: 'Kids',
     imgUrl:
-      'https://purepng.com/public/uploads/large/female-tennis-player-kmi.png'
+      'https://purepng.com/public/uploads/large/hands-holding-table-tennis-of-racket-and-ball-ovk.png'
   },
   {
     id: 58,
@@ -527,7 +527,7 @@ const products = [
     price: 1299,
     for: 'Kids',
     imgUrl:
-      'https://purepng.com/public/uploads/large/female-tennis-player-kmi.png'
+      'https://purepng.com/public/uploads/large/hands-holding-table-tennis-of-racket-and-ball-ovk.png'
   },
   {
     id: 59,
@@ -537,7 +537,7 @@ const products = [
     price: 1299,
     for: 'Kids',
     imgUrl:
-      'https://purepng.com/public/uploads/large/female-tennis-player-kmi.png'
+      'https://purepng.com/public/uploads/large/hands-holding-table-tennis-of-racket-and-ball-ovk.png'
   },
   {
     id: 60,
@@ -547,7 +547,7 @@ const products = [
     price: 1299,
     for: 'Kids',
     imgUrl:
-      'https://purepng.com/public/uploads/large/female-tennis-player-kmi.png'
+      'https://purepng.com/public/uploads/large/hands-holding-table-tennis-of-racket-and-ball-ovk.png'
   },
   {
     id: 61,
@@ -557,7 +557,7 @@ const products = [
     price: 1299,
     for: 'Kids',
     imgUrl:
-      'https://purepng.com/public/uploads/large/female-tennis-player-kmi.png'
+      'https://purepng.com/public/uploads/large/hands-holding-table-tennis-of-racket-and-ball-ovk.png'
   },
   {
     id: 62,
@@ -677,7 +677,7 @@ const products = [
     price: 25,
     for: 'Friends',
     imgUrl:
-      'https://purepng.com/public/uploads/large/female-tennis-player-kmi.png'
+      'https://purepng.com/public/uploads/large/hands-holding-table-tennis-of-racket-and-ball-ovk.png'
   },
   {
     id: 74,
@@ -831,7 +831,7 @@ const products = [
     price: 100,
     for: 'Friends',
     imgUrl:
-      'https://purepng.com/public/uploads/large/female-tennis-player-kmi.png'
+      'https://purepng.com/public/uploads/large/hands-holding-table-tennis-of-racket-and-ball-ovk.png'
   }
 ];
 

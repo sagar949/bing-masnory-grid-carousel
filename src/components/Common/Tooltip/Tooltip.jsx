@@ -78,6 +78,7 @@ export default class Tooltip extends Component {
         key="0"
         ref={this.targetRef}
         aria-describedby="tooltip-content"
+        className={this.props.style}
       >
         {children}
       </span>
