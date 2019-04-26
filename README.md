@@ -1,4 +1,4 @@
-Checkout the Live Version [Here](https://build-awigbfohlu.now.sh)
+Checkout the Live Version (Masnory Grid) [Here](https://build-fdbryfbpxk.now.sh)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
