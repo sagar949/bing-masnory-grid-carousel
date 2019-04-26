@@ -121,6 +121,7 @@
 }
 
 .NormalItem {
+    background: #fff;
     height: 100%;
     display: grid;
     grid-template-rows: 2fr 1.5fr;
@@ -146,6 +147,8 @@
 }
 
 .TallItem {
+    background: #fff;
+
     height: 100%;
 
     display: grid;
@@ -171,6 +174,8 @@
 }
 
 .WideItem {
+    background: #fff;
+
     height: 100%;
     display: grid;
     grid-template-rows: 2fr 1.5fr;

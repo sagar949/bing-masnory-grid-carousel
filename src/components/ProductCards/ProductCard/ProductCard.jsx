@@ -65,7 +65,6 @@ const ProductCard = props => {
       <div
         className={cardStyle}
         onClick={() => window.open('https://www.amazon.com', '_blank')}
-        style={{ background: '#333', color: '#fff' }}
       >
         <div>
           <img src={imgUrl} alt="Product" />
