@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import ProductCards from './../../components/ProductCards/ProductCards';
-import styles from './Carousel.module.css';
 import products from './../../store/products';
+import ProductCards from './../../components/ProductCards/ProductCards';
 import ControlBar from './../../components/ControlBar/ControlBar';
+import styles from './Carousel.module.css';
 export default class Carousel extends Component {
   constructor(props) {
     super(props);

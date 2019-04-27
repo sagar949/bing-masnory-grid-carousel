@@ -1,6 +1,7 @@
 import React from 'react';
-import classes from './GiftFor.module.css';
 import GiftForButton from './GiftForButton/GiftForButton';
+import classes from './GiftFor.module.css';
+
 const GiftFor = ({ onGiftForChange, activeType }) => {
   return (
     <div className={classes.Container}>

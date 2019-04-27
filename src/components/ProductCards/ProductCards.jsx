@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './ProductCards.module.css';
 import ProductCard from './ProductCard/ProductCard';
+import styles from './ProductCards.module.css';
 
 const ProductCards = ({ products }) => {
   const productCards = products.map(p => {

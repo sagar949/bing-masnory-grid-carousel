@@ -1,0 +1,13 @@
+.Animate {
+    animation: animate 500ms;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

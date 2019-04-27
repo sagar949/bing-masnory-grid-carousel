@@ -1,8 +1,6 @@
 import React from 'react';
-import styles from './ProductCard.module.css';
-import 'react-tippy/dist/tippy.css';
-// import { Tooltip } from 'react-tippy';
 import Tooltip from '../../Common/Tooltip/Tooltip';
+import styles from './ProductCard.module.css';
 
 const getRandomPrice = price => {
   return Math.ceil(Math.random() * price) + price + 100;
@@ -14,27 +12,30 @@ const getRandomstyling = () => {
   let style = '';
   let cardStyle = '';
   let detailsStyle = styles.NormalItemDetails;
-  if (styleType === 'tall') {
-    style = [styles.Tall].join(' ');
-    cardStyle = styles.TallItem;
-    detailsStyle = styles.TallItemDetails;
-  } else if (styleType === 'wide') {
-    style = [styles.Wide].join(' ');
-    cardStyle = styles.WideItem;
 
-    detailsStyle = styles.WideItemDetails;
-  } else if (styleType === 'normal') {
-    style = ' '; //[styles.NormalItem].join(' ');
-    cardStyle = styles.NormalItem;
+  switch (styleType) {
+    case 'tall':
+      style = styles.Tall;
+      cardStyle = styles.TallItem;
+      detailsStyle = styles.TallItemDetails;
+      break;
+    case 'wide':
+      style = styles.Wide;
+      cardStyle = styles.WideItem;
+      detailsStyle = styles.WideItemDetails;
+      break;
+    case 'normal':
+      style = ' ';
+      cardStyle = styles.NormalItem;
+      detailsStyle = styles.NormalItemDetails;
+      break;
 
-    detailsStyle = styles.NormalItemDetails;
-  } else {
-    style = ' '; //[styles.NormalItem].join(' ');
-    cardStyle = styles.TallItem;
-
-    detailsStyle = styles.NormalItemDetails;
+    default:
+      style = ' ';
+      cardStyle = styles.TallItem;
+      detailsStyle = styles.NormalItemDetails;
+      break;
   }
-  console.log({ style, detailsStyle });
   return { style, cardStyle, detailsStyle };
 };
 

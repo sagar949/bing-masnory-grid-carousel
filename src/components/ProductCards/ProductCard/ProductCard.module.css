@@ -52,21 +52,23 @@
     /* margin: auto; */
 }
 
+/* Hover Card Styles */
+/* display: grid;
+    grid-template-rows: 2fr auto; */
 .HoveredCard {
     transition: all 0.2s ease;
     width: 220px;
-    /* height: 340px; */
-    /* z-index: 20; */
     background: #fff;
     cursor: pointer;
-    /* display: grid;
-    grid-template-rows: 2fr auto; */
+    display: block;
+    position: static;
+    height: fit-content;
 
 }
 
 .HoveredCardImage {
-    width: 80%;
-    height: 50%;
+    width: 50%;
+    height: 40%;
     margin: auto;
     padding-bottom: 0.5rem;
 
@@ -130,6 +132,7 @@
     justify-items: center;
     align-items: center;
     text-align: center;
+    animation: animate 2s;
 }
 
 .NormalItem img {
@@ -140,10 +143,16 @@
 }
 
 .NormalItemDetails {
-    width: 100%;
+    width: 90%;
     line-height: 0.1;
     text-align: left;
     padding-left: 1rem;
+}
+
+.NormalItemDetails p:first-child {
+    color: grey;
+    padding-bottom: 5px;
+
 }
 
 .TallItem {
@@ -157,6 +166,7 @@
     justify-items: center;
     align-items: center;
     text-align: center;
+    animation: animate 2s;
 }
 
 .TallItem img {
@@ -166,10 +176,16 @@
 }
 
 .TallItemDetails {
-    width: 100%;
+    width: 90%;
     line-height: 0.1;
     text-align: left;
     padding-left: 1rem;
+
+}
+
+.TallItemDetails p:first-child {
+    color: grey;
+    padding-bottom: 5px;
 
 }
 
@@ -183,6 +199,7 @@
     justify-items: center;
     align-items: center;
     text-align: center;
+    animation: animate 2s;
 }
 
 .WideItem img {
@@ -193,7 +210,7 @@
 }
 
 .WideItemDetails {
-    width: 100%;
+    width: 90%;
     line-height: 0.1;
     /* text-align: left; */
     justify-content: flex-start;
@@ -201,4 +218,9 @@
     padding-left: 1rem;
     margin-bottom: 1rem;
 
+}
+
+.WideItemDetails p:first-child {
+    color: grey;
+    padding-bottom: 5px;
 }

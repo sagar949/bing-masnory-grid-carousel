@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from './ControlBar.module.css';
 import Category from '../Category/Category';
 import GiftFor from './../GiftFor/GiftFor';
 import Slider from './../Slider/Slider';
+import styles from './ControlBar.module.css';
+
 const ControlBar = ({
   onCategoryChange,
   onGiftForChange,
