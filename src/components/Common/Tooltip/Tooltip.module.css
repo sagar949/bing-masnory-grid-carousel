@@ -1,5 +1,5 @@
 .Animate {
-    animation: animate 500ms;
+    animation: animate 1s;
 }
 
 @keyframes animate {

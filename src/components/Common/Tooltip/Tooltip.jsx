@@ -33,10 +33,15 @@ export default class Tooltip extends Component {
       clientX: clientX,
       clientY: clientY
     });
+    this.forceUpdate();
   };
 
   hideTooltip = () => {
     this.setState({ ...this.state, active: false, clientX: 0, clientY: 0 });
+  };
+
+  preserveTooltip = () => {
+    this.setState({ ...this.state, active: true });
   };
 
   renderTooltip = () => {
@@ -48,46 +53,32 @@ export default class Tooltip extends Component {
       if (this.tooltipRef.current !== null) {
         console.log(this.isInViewport(this.tooltipRef.current));
       }
-      const {
-        top,
-        left,
-        right,
-        bottom,
-        height,
-        width
-      } = this.targetRef.current.getBoundingClientRect();
-      // const tooltipStyle = {
-      //   position: 'absolute',
-      //   bottom: window.innerHeight - top - 20 - window.scrollY,
-      //   left: left + width / 2 + window.scrollX,
-      //   // transform: 'translateX(300)',
-      //   zIndex: '100',
-      //   diplay: 'block'
-      // };
+      const { height } = this.targetRef.current.getBoundingClientRect();
       const tooltipStyle = {
         position: 'absolute',
-        top:
-          this.state.clientY - height > 0
-            ? this.state.clientY - height
-            : Math.abs(this.state.clientY - height),
-        // top: '50%',
+        top: Math.abs(this.state.clientY - height),
         left: this.state.clientX,
-        zIndex: '100'
+        display: 'block'
       };
 
       const html = (
-        <div style={tooltipStyle} className={styles.Animate}>
+        <div
+          style={tooltipStyle}
+          className={styles.Animate}
+          onMouseEnter={this.preserveTooltip}
+          onMouseLeave={this.hideTooltip}
+        >
           <div
             id="tooltip-content"
             role="tooltip"
             style={{
               position: 'absolute',
-              left: '-50%',
-              //   top: '100%',
               padding: '4px 4px',
               borderRadius: 4,
               background: '#333',
-              color: 'white'
+              color: 'white',
+              display: 'block'
+              // zIndex: '200'
             }}
           >
             {render}
