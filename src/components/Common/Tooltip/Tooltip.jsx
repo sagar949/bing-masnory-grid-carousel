@@ -33,7 +33,6 @@ export default class Tooltip extends Component {
       clientX: clientX,
       clientY: clientY
     });
-    this.forceUpdate();
   };
 
   hideTooltip = () => {
