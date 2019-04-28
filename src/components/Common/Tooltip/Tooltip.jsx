@@ -19,7 +19,6 @@ export default class Tooltip extends Component {
     }
 
     this.targetRef = React.createRef();
-    this.tooltipRef = React.createRef();
   }
 
   showTooltip = e => {
@@ -48,10 +47,6 @@ export default class Tooltip extends Component {
     const { render } = this.props;
 
     if (active) {
-      console.log(this.targetRef.current.getBoundingClientRect());
-      if (this.tooltipRef.current !== null) {
-        console.log(this.isInViewport(this.tooltipRef.current));
-      }
       const { height } = this.targetRef.current.getBoundingClientRect();
       const tooltipStyle = {
         position: 'absolute',
